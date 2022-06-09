@@ -18,10 +18,10 @@
 //    01.00.00  2022.06.06  KSchulte      Original version
 //
 
-#include <OneWire.h>
-#include <DallasTemperature.h>
-#include <DHT.h>											// DHT11 temperature/humidity sensor library
-#include <Bme280.h>										// BME280 temperature/humidity/pressur sensor library
+#include <DHT.h>												// DHT11 temperature/humidity sensor library
+#include <Bme280.h>											// BME280 temperature/humidity/pressur sensor library
+
+#include "GT_SoilTemperatureSensor.h"		// Growtacular soil temperature sensors
 
 //
 // DATA
@@ -29,8 +29,8 @@
 
 // DHT11 Sensor Data
 
-#define DHT11_PIN 10                  // DHT11 Temp/Humidity sensor wire is plugged into pin 10 on the Arduino
-DHT dhtSensor = DHT(DHT11_PIN,DHT11); // DHT11 sensor instance
+#define DHT11_PIN 10                  	// DHT11 Temp/Humidity sensor wire is plugged into pin 10 on the Arduino
+DHT dhtSensor = DHT(DHT11_PIN,DHT11); 	// DHT11 sensor instance
 
 // DS18B20 Sensor Data
 
