@@ -13,6 +13,13 @@
  *    01.00.00  2022.06.08  KSchulte      Original version
  */
 
+#
+#GT_Sensor::GT_Sensor() {
+#
+#}
+#
+
+
 #ifndef GT_SoilTemperatureSensor_h
 #define GT_SoilTemperatureSensor_h
 

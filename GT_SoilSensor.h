@@ -24,6 +24,26 @@
 
 typedef uint8_t DeviceAddress[8];     				// Device address datatatype (8*unsigned byte)
 
+enum {
+	MEASUREMENT_AIR_TEMPERATURE =	1,
+	MEASUREMENT_AIR_PRESSURE =      2,
+}
+
+/*
+ * Growtastic Sensor
+ */
+class GT_Sensor {
+public:
+  GT_Sensor(void);
+  begin(bool addr_detect=true);
+  end(void);
+  bool measures_temperature(void);
+  bool measures_hulidity();
+  bool measures_pressure();
+
+
+
+
 
 
 // Growtastic Soil Temperature Sensor
